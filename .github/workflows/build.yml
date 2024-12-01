@@ -2,4 +2,5 @@ on: push
 jobs:
   first-job:
     steps:
-      
+      -run: node --version
+      -run: npm --version
