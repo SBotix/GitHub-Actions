@@ -11,5 +11,8 @@ jobs:
       - name: Check npm version
         run: npm --version
       - uses: actions/checkout@v2
+        name: checkout code
       - run: npm install
+        name: install npm to build the app in container
       - run: node app.js
+        name: run the app
