@@ -1,10 +1,10 @@
-name: Node Continuous integration
+name: Node Continuous integration path1
 on: push
 jobs:
   first-job:
     name: Build Node
-    # runs-on: ubuntu-latest
-    runs-on: alpine:3.10
+    runs-on: ubuntu-latest
+    # runs-on: alpine:3.10
     container: node:17.6.0
     steps:
       - name: Check node version
@@ -16,4 +16,4 @@ jobs:
       - run: npm install
         name: install npm to build the app in container
       - run: node app.js
-        name: run the app
+        name: run the app 
