@@ -1,4 +1,4 @@
-name: Node Continuous integration
+name: Node Continuous integration path1
 on: push
 jobs:
   first-job:
@@ -16,4 +16,4 @@ jobs:
       - run: npm install
         name: install npm to build the app in container
       - run: node app.js
-        name: run the app
+        name: run the app 
